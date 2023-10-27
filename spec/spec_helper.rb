@@ -1,8 +1,8 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), 'lib'))
-MODELS = File.join(File.dirname(__FILE__), 'models') unless const_defined?(:RESET)
+MODELS = File.join(File.dirname(__FILE__), 'models')
 $LOAD_PATH.unshift(MODELS)
-VALIDATORS = File.join(File.dirname(__FILE__), 'validators') unless const_defined?(:RESET)
+VALIDATORS = File.join(File.dirname(__FILE__), 'validators')
 $LOAD_PATH.unshift(VALIDATORS)
 
 require 'rubygems'
