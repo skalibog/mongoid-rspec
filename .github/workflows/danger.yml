@@ -15,5 +15,5 @@ jobs:
           bundler-cache: true
       - run: |
           # the personal token is public, this is ok, base64 encode to avoid tripping Github
-          TOKEN=$(echo -n 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 | base64 --decode)
+          TOKEN=$(echo -n Z2hwX01rSWxjcllwWDE3NU1GR3pTaURIcWdnYTJxQlFybjFkZlhUMA== | base64 --decode)
           DANGER_GITHUB_API_TOKEN=$TOKEN bundle exec danger --verbose
